@@ -15,6 +15,9 @@ function initializeFirebase() {
 
     // 初始化 Firebase
     const app = firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    const auth = firebase.auth();
+    auth.useDeviceLanguage();
 }
 
 //當文檔加載完成時
